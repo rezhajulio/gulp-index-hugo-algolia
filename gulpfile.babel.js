@@ -12,10 +12,11 @@ import algoliasearch from 'algoliasearch';
 import * as dotenv from 'dotenv';
 import matter from 'gray-matter';
 
+// load configuration from .env file
 dotenv.load();
 
 const PATH = {
-    content: "content/**/*.md",
+    content: "content/**/*.md", // hugo posts location
     index: "dist/index.json"
 };
 
